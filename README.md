@@ -4,21 +4,21 @@
 
 ---
 
-O Databook é um dicionário online projetado para simplificar termos complexos da tecnologia. Com uma linguagem clara e acessível, ele é ideal para todos que desejam entender melhor o mundo digital, seja você um iniciante ou um profissional da área.
+Tecnário (tecnario.netlify.app) é um dicionário online projetado para simplificar termos complexos da tecnologia. Com uma linguagem clara e acessível, ele é ideal para todos que desejam entender melhor o mundo digital, seja você um iniciante ou um profissional da área.
 
-Além de explicar termos técnicos, o Databook é inclusivo e acessível, oferecendo suporte para pessoas com deficiências auditivas e de fala. Através de ilustrações e descrições, buscamos garantir que todos possam aprender e se beneficiar do conhecimento tecnológico.
+Além de explicar termos técnicos, Tecnário é inclusivo e acessível, oferecendo suporte para pessoas com deficiências auditivas e de fala. Através de ilustrações e descrições, buscamos garantir que todos possam aprender e se beneficiar do conhecimento tecnológico.
 
-O Databook é mais do que um dicionário; é uma ferramenta de aprendizado que democratiza o acesso à informação. Venha explorar e desmistificar o jargão tecnológico conosco!
+Tecnário é mais do que um dicionário; é uma ferramenta de aprendizado que democratiza o acesso à informação. Venha explorar e desmistificar o jargão tecnológico conosco!
 
-Ao utilizar o Diciotech, você pode:
+Ao utilizar Tecnário, você pode:
 
 * Aprender novos termos de forma rápida e fácil.
 * Contribuir para a construção de uma comunidade de aprendizado em tecnologia.
 * Aprimorar suas habilidades técnicas de forma colaborativa.
 
-Junte-se à nossa comunidade no [GitHub](https://github.com/levxyca/diciotech/discussions) para discutir sobre o projeto!
+Junte-se à nossa comunidade no [GitHub](https://github.com/joaomarcosjova/tecnario/discussions) para discutir sobre o projeto!
 
-![Imagem de captura do site do Diciotech](./assets/img/diciotech-screenshot.png)
+![Imagem de captura do site do Diciotech](./assets/img/cover.png)
 
 ## 🤝 Contribua
 
