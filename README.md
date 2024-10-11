@@ -22,7 +22,7 @@ Junte-se à nossa comunidade no [GitHub](https://github.com/joaomarcosjova/tecna
 
 ## 🤝 Contribua
 
-Qualquer contribuição é muito bem-vinda! Confira a documentação [CONTRIBUTING.md](CONTRIBUTING.md) para conhecer todas as formas de contribuir com o projeto. Por exemplo, [sugerir uma nova funcionalidade](https://github.com/levxyca/diciotech/issues/new?assignees=&labels=&template=feature_request.md&title=), [reportar um problema/bug](https://github.com/levxyca/diciotech/issues/new?assignees=&labels=bug&template=bug_report.md&title=), [enviar um pull request](https://help.github.com/articles/about-pull-requests/) ou simplemente utilizar o projeto e comentar sua experiência.
+Qualquer contribuição é muito bem-vinda! Confira a documentação [CONTRIBUTING.md](CONTRIBUTING.md) para conhecer todas as formas de contribuir com o projeto. Por exemplo, [sugerir uma nova funcionalidade](https://github.com/joaomarcosjova/tecnario/issues/new?assignees=&labels=&template=feature_request.md&title=), [reportar um problema/bug](https://github.com/joaomarcosjova/tecnario/issues/new?assignees=&labels=bug&template=bug_report.md&title=), [enviar um pull request](https://help.github.com/articles/about-pull-requests/) ou simplemente utilizar o projeto e comentar sua experiência.
 
 Verifique o arquivo [ROADMAP.md](ROADMAP.md) para se manter por dentro de como o projeto deve evoluir.
 
@@ -30,6 +30,6 @@ Verifique o arquivo [ROADMAP.md](ROADMAP.md) para se manter por dentro de como o
 
 ### Principais pessoas contribuidoras
 
-<a href="https://github.com/levxyca/diciotech/graphs/contributors">
+<a href="https://github.com/joaomarcosjova/tecnario/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=levxyca/diciotech&anon=0&columns=10&max=30" alt="Lista de contribuidores"/>
 </a>
