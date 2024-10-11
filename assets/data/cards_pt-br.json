@@ -1103,6 +1103,41 @@
       "description": "O versionamento de código é o controle de alterações feitas em um projeto ao longo do tempo, acompanhando e registrando modificações feitas no código-fonte."
     },
     {
+      "title": "TypeScript",
+      "tags": [
+        "Conceito", "Front-end", "Back-end"
+      ],
+      "description": "TypeScript é um superset do JavaScript que adiciona tipagem estática opcional, permitindo que os desenvolvedores identifiquem erros durante a escrita do código."
+    },
+    {
+      "title": "Next.js",
+      "tags": [
+        "Conceito", "Framework"
+      ],
+      "description": "Next.js é um framework para React que permite a construção de aplicações web com renderização do lado do servidor, facilitando o SEO e melhorando o desempenho."
+    },
+    {
+      "title": "NPM",
+      "tags": [
+        "Conceito", "Ferramenta"
+      ],
+      "description": "NPM (Node Package Manager) é um gerenciador de pacotes para JavaScript, que permite a instalação e gerenciamento de bibliotecas e dependências em projetos."
+    },
+    {
+      "title": "SDK",
+      "tags": [
+        "Conceito", "Mobile"
+      ],
+      "description": "Um SDK (Software Development Kit) é um conjunto de ferramentas, bibliotecas e documentação que ajuda os desenvolvedores a criar aplicações para uma plataforma específica."
+    },
+    {
+      "title": "Yarn",
+      "tags": [
+        "Conceito", "Ferramenta"
+      ],
+      "description": "Yarn é um gerenciador de pacotes que permite instalar, atualizar e gerenciar dependências de projetos JavaScript, oferecendo maior velocidade e segurança em relação ao NPM."
+    },
+    {
       "title": "Visão Computacional",
       "tags": [
         "Conceito",
