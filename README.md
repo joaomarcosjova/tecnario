@@ -4,7 +4,11 @@
 
 ---
 
-O Diciotech é um dicionário tech online colaborativo, construído com HTML, SASS e JavaScript, e open source. Nossa missão é ajudar pessoas de todos os níveis a entenderem termos e conceitos relacionados à tecnologia de forma clara e simples.
+O Databook é um dicionário online projetado para simplificar termos complexos da tecnologia. Com uma linguagem clara e acessível, ele é ideal para todos que desejam entender melhor o mundo digital, seja você um iniciante ou um profissional da área.
+
+Além de explicar termos técnicos, o Databook é inclusivo e acessível, oferecendo suporte para pessoas com deficiências auditivas e de fala. Através de ilustrações e descrições, buscamos garantir que todos possam aprender e se beneficiar do conhecimento tecnológico.
+
+O Databook é mais do que um dicionário; é uma ferramenta de aprendizado que democratiza o acesso à informação. Venha explorar e desmistificar o jargão tecnológico conosco!
 
 Ao utilizar o Diciotech, você pode:
 

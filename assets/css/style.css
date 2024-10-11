@@ -194,7 +194,7 @@ html {
   justify-content: space-around;
 }
 .msg .collumn-1 img {
-  background-color: #FF6500;
+  /* background-color: #FF6500; */
   border-radius: 10px;
   height: 350px;
   width: 350px;
