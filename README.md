@@ -31,5 +31,5 @@ Verifique o arquivo [ROADMAP.md](ROADMAP.md) para se manter por dentro de como o
 ### Principais pessoas contribuidoras
 
 <a href="https://github.com/joaomarcosjova/tecnario/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=levxyca/diciotech&anon=0&columns=10&max=30" alt="Lista de contribuidores"/>
+  <img src="https://contrib.rocks/image?repo=joaomarcosjova/tecnario&anon=0&columns=10&max=100" alt="Lista de contribuidores"/>
 </a>
