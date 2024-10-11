@@ -2,7 +2,7 @@
 
 ### **Versão Atual: v1.1.0 (Lançada)**
 
-**Lançada em:** 19/09/2024  
+**Lançada em:** 12/10/2024  
 **Principais Atualizações:**
 - Novas tags e categorias adicionadas (Infraestrutura de Rede, Web3).
 - Templates de PR e issues aprimorados.
@@ -54,4 +54,4 @@
 
 **Objetivo de Engajamento**:
 - Aumentar o número de contribuidores ativos em 20% até o final de 2025.
-- Expandir o reconhecimento do Diciotech como uma ferramenta educativa dentro e fora da comunidade.
+- Expandir o reconhecimento do Tecnário como uma ferramenta educativa dentro e fora da comunidade.

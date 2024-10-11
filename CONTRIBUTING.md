@@ -1,18 +1,18 @@
-# 📖 Contribua com o Diciotech
+# 📖 Contribua com o tecnario
 
-Quer contribuir conosco?! Gratidão 💙
+Quer contribuir conosco? Gratidão 💙
 
-Neste guia vamos explicar como funcionam os processos para que você possa contribuir com o Diciotech.
+Neste guia vamos explicar como funcionam os processos para que você possa contribuir com o tecnario.
 
 ## 🤔 Como contribuir
 
 Existem diversas formas de contribuir com o projeto:
 
-- [📖 Contribua com o Diciotech](#-contribua-com-o-diciotech)
+- [📖 Contribua com o Tecnário](#-contribua-com-o-tecnario)
   - [⚒️ Instalando ambiente de desenvolvimento para contribuir](#️-instalando-ambiente-de-desenvolvimento-para-contribuir)
   - [🤔 Como contribuir](#-como-contribuir)
-    - [Adicionando um novo termo técnico no Diciotech](#adicionando-um-novo-termo-técnico-no-diciotech)
-    - [Adicionando uma nova tag no Diciotech](#adicionando-uma-nova-tag-no-diciotech)
+    - [Adicionando um novo termo técnico no tecnario](#adicionando-um-novo-termo-técnico-no-tecnario)
+    - [Adicionando uma nova tag no tecnario](#adicionando-uma-nova-tag-no-tecnario)
     - [Reportando bugs](#reportando-bugs)
     - [Indicando melhorias e pedindo funcionalidades](#indicando-melhorias-e-pedindo-funcionalidades)
     - [Discutindo as issues](#discutindo-as-issues)
@@ -39,7 +39,7 @@ Para visualizar seu projeto, você pode abrir o arquivo `index.html` em um naveg
    <summary>
       :rotating_light: Para efetuar alterações visuais
    </summary>
-Caso queira mexer na parte visual do Diciotech, você também vai precisar, antes de executar o projeto:
+Caso queira mexer na parte visual do tecnario, você também vai precisar, antes de executar o projeto:
 
 #### 1. **Instale um pré-processador SASS**
 Para compilar SASS em CSS, você precisará de um compilador. Recomendo a leitura do https://sass-lang.com/guide/ 👀
@@ -52,9 +52,9 @@ sass scss/styles.scss css/styles.css --watch
 O `--watch` faz com que o SASS fique monitorando alterações no arquivo `.scss` e compile automaticamente.
 </details>
 
-### Adicionando um novo termo técnico no Diciotech
+### Adicionando um novo termo técnico no tecnario
 
-Adicione mais conteúdo no Diciotech [abrindo um pull request](#fazendo-pull-requests) com o termo que deseja que esteja presente no site. Para adicionar um novo termo, você deve acessar o arquivo `assets/data/cards_pt-br.json` e inserir um novo item na lista, seguindo a seguinte estrutura:
+Adicione mais conteúdo no tecnario [abrindo um pull request](#fazendo-pull-requests) com o termo que deseja que esteja presente no site. Para adicionar um novo termo, você deve acessar o arquivo `assets/data/cards_pt-br.json` e inserir um novo item na lista, seguindo a seguinte estrutura:
 
 ```json
 {
@@ -77,9 +77,9 @@ ou
 }
 ```
 
-> **Observação:** caso a sua contribuição não se alinhe com qualquer uma das tags disponíveis, listadas na seção seguinte, verifique a seção [Adicionando uma nova tag no Diciotech](#adicionando-uma-nova-tag-no-diciotech).
+> **Observação:** caso a sua contribuição não se alinhe com qualquer uma das tags disponíveis, listadas na seção seguinte, verifique a seção [Adicionando uma nova tag no tecnario](#adicionando-uma-nova-tag-no-tecnario).
 
-Antes de abrir o pull request, algumas **boas práticas** devem ser seguidas para uma maior organização e estabilidade do Diciotech.
+Antes de abrir o pull request, algumas **boas práticas** devem ser seguidas para uma maior organização e estabilidade do tecnario.
 
 
 - Se o termo conter um código de exemplo, evite o escrever em uma linguagem de programação específica, faça isso **apenas** se realmente necessário;
@@ -91,9 +91,9 @@ Antes de abrir o pull request, algumas **boas práticas** devem ser seguidas par
 - Tome a cuidado para que as tags atribuídas a um termo façam sentido com o mesmo.
 
 
-### Adicionando uma nova tag no Diciotech
+### Adicionando uma nova tag no tecnario
 
-Você pode contribuir com o projeto propondo uma nova tag e a apresentando, como sugestão, por meio de uma [issue](https://github.com/levxyca/diciotech/issues) para que se possa abrir uma discussão a respeito, para uma futura adição através de pull request. As tags disponíveis **sempre** vão estar presentes nessa documentação.
+Você pode contribuir com o projeto propondo uma nova tag e a apresentando, como sugestão, por meio de uma [issue](https://github.com/levxyca/tecnario/issues) para que se possa abrir uma discussão a respeito, para uma futura adição através de pull request. As tags disponíveis **sempre** vão estar presentes nessa documentação.
 
 
 Tags disponíveis:
@@ -124,13 +124,13 @@ Antes de criar uma issue e abrir um PR, todas as tags devem seguir algumas boas 
 ### Reportando bugs
 
 Se encontraste um bug você pode reportá-lo usando a ferramenta de
-[issues do GitHub](https://github.com/levxyca/diciotech/issues). Porém, antes de criar a issue com as informações sobre o bug, é importante fazer as seguintes verificações:
+[issues do GitHub](https://github.com/levxyca/tecnario/issues). Porém, antes de criar a issue com as informações sobre o bug, é importante fazer as seguintes verificações:
 
 1. Atualize seu repositório local na branch `main` mais recente. Talvez seu bug já tenha sido corrigido na versão mais recente;
 2. Verifique se o bug já foi reportado por outra pessoa, então faça uma busca pelas issues abertas.
 
 Se o bug realmente não foi resolvido ou reportado, você pode
-[criar uma nova issue](https://github.com/levxyca/diciotech/issues/new). No
+[criar uma nova issue](https://github.com/levxyca/tecnario/issues/new). No
 título da issue tente resumir da melhor forma o problema encontrado.
 
 Se possível inclua imagens ou vídeos à descrição do bug para facilitar o processo de reprodução. Você também deve adicionar o label **bug** à issue.
@@ -140,9 +140,9 @@ Se possível inclua imagens ou vídeos à descrição do bug para facilitar o pr
 Outra ótima forma de contribuir é indicando melhorias ao código do projeto e em como ele está estruturado ou pedindo funcionalidades novas. Se você tem qualquer ideia de como podemos melhorar alguma abordagem na solução de problemas, refatoração de código, melhoria em algum recurso ou qualquer outra coisa relacionada, siga estes passos:
 
 1. Certifique-se de que sua ideia já não esteja sendo abordada em nosso [roadmap](./ROADMAP.md);
-2. Verifique se a ideia já não está presente em nossas [issues do GitHub](https://github.com/levxyca/diciotech/issues).
+2. Verifique se a ideia já não está presente em nossas [issues do GitHub](https://github.com/levxyca/tecnario/issues).
 
-Concluindo esses dois passos, você pode [criar uma nova issue](https://github.com/levxyca/diciotech/issues/new) descrevendo as melhorias e usando o label **feature**.
+Concluindo esses dois passos, você pode [criar uma nova issue](https://github.com/levxyca/tecnario/issues/new) descrevendo as melhorias e usando o label **feature**.
 
 ### Discutindo as issues
 
