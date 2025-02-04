@@ -1,6 +1,97 @@
 import "./dark_mode.js";
 import { levenshtein } from "./levenshtein.js";
 
+const translations = {
+  pt: {
+    title: "Dicionário de Tecnologia",
+    subtitle: "Um dicionário que simplifica termos tecnológicos. 📖",
+    donate: "Doar",
+    searchPlaceholder: "Pesquisar...",
+    filterLabel: "Filtrar por categoria:",
+    darkModeToggle: "Mudar tema",
+    cookiesMessage: "O Diciotech usa cookies para garantir que você obtenha uma melhor experiência.",
+    cookiesButton: "Concordar e fechar"
+  },
+  en: {
+    title: "Technology Dictionary",
+    subtitle: "A dictionary that simplifies technological terms. 📖",
+    donate: "Donate",
+    searchPlaceholder: "Search...",
+    filterLabel: "Filter by category:",
+    darkModeToggle: "Change theme",
+    cookiesMessage: "This site uses cookies to enhance your experience.",
+    cookiesButton: "Agree and close"
+  }
+};
+
+function changeLanguage(lang) {
+  document.querySelector(".header__title").innerText = translations[lang].title;
+  document.querySelector(".header__subtitle").innerText = translations[lang].subtitle;
+  document.querySelector(".button-donate p").innerText = translations[lang].donate;
+  document.querySelector("#search-input").placeholder = translations[lang].searchPlaceholder;
+  document.querySelector(".filter_label").innerText = translations[lang].filterLabel;
+  document.querySelector(".cookies-message").innerText = translations[lang].cookiesMessage;
+  document.querySelector(".cookies-accept-button").innerText = translations[lang].cookiesButton;
+
+  // Dark mode toggle
+  document.querySelector("#dark-mode-toggle").title = translations[lang].darkModeToggle;
+}
+
+// Event listener for language change
+document.getElementById("language-switcher").addEventListener("change", (e) => {
+  const selectedLang = e.target.value;
+  changeLanguage(selectedLang);
+});
+
+
+  let currentLang = localStorage.getItem("preferredLanguage") || "pt"; // Default to Portuguese
+  let languageData = {}; // Store JSON content
+  
+  // Function to load the correct language file
+  function loadLanguage(lang) {
+    const filePath = lang === "en" ? "cards_en-gb.json" : "cards_pt-br.json"; // Use correct filenames
+  
+    fetch(filePath)
+      .then(response => response.json())
+      .then(data => {
+        languageData = data;
+        updateContent();
+      })
+      .catch(error => console.error("Error loading JSON:", error));
+  }
+  
+  // Function to update the website content
+  function updateContent() {
+    document.querySelectorAll("[data-translate]").forEach(element => {
+      const key = element.getAttribute("data-translate");
+      const keys = key.split("."); // Handles nested JSON structure
+      let value = languageData;
+  
+      // Traverse JSON keys
+      keys.forEach(k => value = value[k]);
+  
+      if (element.tagName === "INPUT") {
+        element.setAttribute("placeholder", value); // Update placeholders
+      } else {
+        element.textContent = value; // Update text content
+      }
+    });
+  }
+  
+  // Event Listener for Language Switcher
+  document.querySelector("#language-switcher").addEventListener("change", (event) => {
+    const selectedLang = event.target.value;
+    localStorage.setItem("preferredLanguage", selectedLang);
+    changeLanguage(selectedLang);
+  });
+  
+  // Load saved language preference
+  document.addEventListener("DOMContentLoaded", () => {
+    const savedLang = localStorage.getItem("preferredLanguage") || "pt";
+    document.querySelector("#language-switcher").value = savedLang;
+    changeLanguage(savedLang);
+  });
+  
 const exactWordScore = 12;
 const partialWordScore = 10;
 const levenshteinScore = 10;

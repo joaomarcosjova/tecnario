@@ -1,4 +1,32 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+#language-switcher {
+  padding: 8px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+#language-switcher:hover {
+  border-color: #007bff;
+}
+
+#language-switcher:focus {
+  outline: none;
+  border-color: #0056b3;
+}
+.body-dark-mode #language-switcher {
+  background-color: #232226;
+  color: #ffffff;
+}
+
+
 .body-dark-mode {
   background-color: #232226;
   color: #ffffff;
