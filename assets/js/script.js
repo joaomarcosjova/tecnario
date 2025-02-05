@@ -395,7 +395,7 @@ async function sortCardsByTitle(data) {
 
 async function getCardsFromJson() {
     try {
-        const res = await fetch("./assets/data/cards_en-gb.json");
+        const res = await fetch("./assets/data/cards_pt-br.json");
         const data = await res.json();
         const sortedCards = await sortCardsByTitle(data);
         await loadFavoriteCardsId();
