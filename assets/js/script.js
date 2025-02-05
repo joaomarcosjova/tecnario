@@ -49,7 +49,7 @@ document.getElementById("language-switcher").addEventListener("change", (e) => {
   
   // Function to load the correct language file
   function loadLanguage(lang) {
-    const filePath = lang === "en" ? "cards_en-gb.json" : "cards_pt-br.json"; // Use correct filenames
+    const filePath = lang === "en" ? ".assets/data/cards_en-gb.json" : ".assets/data/cards_pt-br.json"; 
   
     fetch(filePath)
       .then(response => response.json())
@@ -395,7 +395,7 @@ async function sortCardsByTitle(data) {
 
 async function getCardsFromJson() {
     try {
-        const res = await fetch("./assets/data/cards_pt-br.json");
+        const res = await fetch("./assets/data/cards_en-gb.json");
         const data = await res.json();
         const sortedCards = await sortCardsByTitle(data);
         await loadFavoriteCardsId();
