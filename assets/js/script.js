@@ -49,7 +49,7 @@ document.getElementById("language-switcher").addEventListener("change", (e) => {
   
   // Function to load the correct language file
   function loadLanguage(lang) {
-    const filePath = lang === "en" ? ".assets/data/cards_en-gb.json" : ".assets/data/cards_pt-br.json"; 
+    const filePath = lang === "en" ? "./assets/data/cards_en-gb.json" : "./assets/data/cards_pt-br.json"; 
   
     fetch(filePath)
       .then(response => response.json())
@@ -79,18 +79,33 @@ document.getElementById("language-switcher").addEventListener("change", (e) => {
   }
   
   // Event Listener for Language Switcher
-  document.querySelector("#language-switcher").addEventListener("change", (event) => {
-    const selectedLang = event.target.value;
-    localStorage.setItem("preferredLanguage", selectedLang);
-    changeLanguage(selectedLang);
-  });
+//   document.querySelector("#language-switcher").addEventListener("change", (event) => {
+//     const selectedLang = event.target.value;
+//     localStorage.setItem("preferredLanguage", selectedLang);
+//     changeLanguage(selectedLang);
+//   });
   
   // Load saved language preference
-  document.addEventListener("DOMContentLoaded", () => {
-    const savedLang = localStorage.getItem("preferredLanguage") || "pt";
-    document.querySelector("#language-switcher").value = savedLang;
-    changeLanguage(savedLang);
-  });
+//   document.addEventListener("DOMContentLoaded", () => {
+//     const savedLang = localStorage.getItem("preferredLanguage") || "pt";
+//     document.querySelector("#language-switcher").value = savedLang;
+//     changeLanguage(savedLang);
+//   });
+
+
+  document.getElementById("language-switcher").addEventListener("change", function () {
+    const selectedLanguage = this.value; // Get the selected language from dropdown
+    getCardsFromJson(selectedLanguage); // Fetch and display cards in selected language
+});
+
+// Load default language on page load
+document.addEventListener("DOMContentLoaded", () => {
+    getCardsFromJson("pt"); // Default to English on first load
+});
+
+
+
+  
   
 const exactWordScore = 12;
 const partialWordScore = 10;
@@ -393,19 +408,56 @@ async function sortCardsByTitle(data) {
     return data.cards.sort((a, b) => a.title.localeCompare(b.title));
 }
 
-async function getCardsFromJson() {
+// async function getCardsFromJson() {
+//     try {
+//         const res = await fetch("./assets/data/cards_pt-br.json");
+//         const data = await res.json();
+//         const sortedCards = await sortCardsByTitle(data);
+//         await loadFavoriteCardsId();
+//         await addFavoriteTag(sortedCards);
+//         getTagsFromCards(sortedCards);
+//         insertCardsIntoHtml(sortedCards);
+//     } catch (error) {
+//         console.error("An error occurred while fetching card data.", error);
+//     }
+// }
+
+// let me try if else here 
+
+async function getCardsFromJson(language = "en") {
     try {
-        const res = await fetch("./assets/data/cards_pt-br.json");
-        const data = await res.json();
-        const sortedCards = await sortCardsByTitle(data);
-        await loadFavoriteCardsId();
-        await addFavoriteTag(sortedCards);
-        getTagsFromCards(sortedCards);
-        insertCardsIntoHtml(sortedCards);
+        let res; // Declare a variable to store the response from fetch
+
+        // Determine which JSON file to fetch based on the selected language
+        if (language === "en") {
+            res = await fetch("./assets/data/cards_en-gb.json"); // Fetch English card data
+        } else if (language === "pt") {
+            res = await fetch("./assets/data/cards_pt-br.json"); // Fetch Portuguese card data
+        } else {
+            throw new Error("Unsupported language"); // Handle unsupported language input
+        }
+
+        const data = await res.json(); // Convert the fetched response into JSON format
+
+        const sortedCards = await sortCardsByTitle(data); // Sort the card data by title
+
+        await loadFavoriteCardsId(); // Load the list of favorite card IDs from storage
+
+        await addFavoriteTag(sortedCards); // Add a favorite tag to cards based on saved favorites
+
+        getTagsFromCards(sortedCards); // Extract and process tags from the sorted card data
+
+        insertCardsIntoHtml(sortedCards); // Render the sorted cards into the HTML page
     } catch (error) {
-        console.error("An error occurred while fetching card data.", error);
+        console.error("An error occurred while fetching card data.", error); // Log any errors
     }
 }
+
+
+
+
+
+
 
 searchInput.addEventListener("input", searchCards);
 filterSelect.addEventListener("change", filterCards);
