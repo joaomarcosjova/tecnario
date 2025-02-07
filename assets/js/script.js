@@ -8,6 +8,7 @@ const translations = {
     donate: "Doar",
     searchPlaceholder: "Pesquisar...",
     filterLabel: "Filtrar por categoria:",
+    tagsFilter: "Todos",
     darkModeToggle: "Mudar tema",
     cookiesMessage: "O Diciotech usa cookies para garantir que você obtenha uma melhor experiência.",
     cookiesButton: "Concordar e fechar"
@@ -18,6 +19,7 @@ const translations = {
     donate: "Donate",
     searchPlaceholder: "Search...",
     filterLabel: "Filter by category:",
+    tagsFilter: "All",
     darkModeToggle: "Change theme",
     cookiesMessage: "This site uses cookies to enhance your experience.",
     cookiesButton: "Agree and close"
@@ -35,6 +37,17 @@ function changeLanguage(lang) {
 
   // Dark mode toggle
   document.querySelector("#dark-mode-toggle").title = translations[lang].darkModeToggle;
+
+  //Tag Filter
+  document.querySelector(".filter_label").innerText = translations[lang].filterLabel;
+
+  const filterDropdown = document.querySelector("#tags-filter");
+  const firstOption = filterDropdown.options[0]; // Get the first option
+
+  if (firstOption) {
+    firstOption.value = translations[lang].tagsFilter.toLowerCase(); // Change value
+    firstOption.textContent = translations[lang].tagsFilter; // Change text
+  }
 }
 
 // Event listener for language change
