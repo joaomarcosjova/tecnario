@@ -35,7 +35,7 @@ function changeLanguage(lang) {
   document.querySelector(".cookies-message").innerText = translations[lang].cookiesMessage;
   document.querySelector(".cookies-accept-button").innerText = translations[lang].cookiesButton;
 
-  // Dark mode toggle
+  // Dark mode toggle 
   document.querySelector("#dark-mode-toggle").title = translations[lang].darkModeToggle;
 
   //Tag Filter
