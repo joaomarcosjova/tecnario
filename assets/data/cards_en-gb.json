@@ -1,0 +1,1162 @@
+{
+"cards": [
+    {
+      "title": "Abstraction",
+      "tags": [
+        "Concept"
+      ],
+      "description": "Abstraction simplifies specific aspects of a system or behavior we're trying to understand.  In programming, we constantly use abstractions. This means we don't need to know all the technical details to write code – like how a computer works internally. Instead, we use simpler concepts to build programs."
+    },
+    {
+      "title": "Domain Adaptation",
+      "tags": [
+        "Concept",
+        "Artificial Intelligence"
+      ],
+      "description": "This is the ability to apply an algorithm trained on one or more source domains to a different, but related, target domain. Domain adaptation is a subcategory of transfer learning. In domain adaptation, the source and target domains share the same feature space (but have different distributions), while transfer learning includes cases where the target domain's feature space is different. For example, a spam filter trained on one user's data can be adapted for a new user with completely different emails."
+    },
+    {
+      "title": "Algorithm",
+      "tags": [
+        "Concept"
+      ],
+      "description": "An algorithm is like a recipe for a computer. It's a structured set of steps to solve a problem, such as performing calculations or analyzing data."
+    },
+    {
+      "title": "Environment",
+      "tags": [
+        "Concept"
+      ],
+      "description": "We typically call the environment the location or server where the application is available for testing, validation, end-users, or other purposes. This server acts like a computer; it can be a physical machine or a cloud-based one.  There are local and development environments (where development happens), staging (or homologation – where testing is usually done), and production (where the final, tested system is available to users)."
+    },
+    {
+      "title": "API",
+      "tags": [
+        "Back-end",
+        "Concept"
+      ],
+      "description": "API stands for Application Programming Interface. It's a code structure that meets specific requirements, adhering to development standards, and helps organize large systems. It provides functionality and information to applications and websites. For example: a postal service API that simplifies CEP and address lookups."
+    },
+    {
+      "title": "Machine Learning",
+      "tags": [
+        "Concept",
+        "Artificial Intelligence"
+      ],
+      "description": "In English, Machine Learning (ML) is a subset of artificial intelligence (AI) that allows computers to learn from data and make predictions without explicit programming.  Most AI uses machine learning, leading to frequent interchangeable use of the terms, but machine learning is just one AI approach. It solves complex problems and automates tasks too time-consuming or impossible for humans."
+    },
+    {
+      "title": "Few-Shot Learning",
+      "tags": [
+        "Concept",
+        "Artificial Intelligence"
+      ],
+      "description": "This machine learning type trains a model (usually pre-trained) using a small amount of labeled data—few examples per class.  It's widely used for classification on small datasets."
+    },
+    {
+      "title": "Unsupervised Learning",
+      "tags": [
+        "Concept",
+        "Artificial Intelligence"
+      ],
+      "description": "This machine learning type trains a model using unlabeled data. It solves clustering problems, identifying patterns in datasets. For example, a model could group images of cats and dogs without labeled training data, finding patterns and grouping accordingly."
+    },
+    {
+      "title": "Reinforcement Learning",
+      "tags": [
+        "Concept",
+        "Artificial Intelligence"
+      ],
+      "description": "Reinforcement Learning (RL) is a machine learning type using rewards to train a model. It solves decision-making problems by maximizing reward.  For example, a model can be trained to play a game using actions and associated rewards as training data."
+    },
+    {
+      "title": "Reinforcement Learning from Human Feedback",
+      "tags": [
+        "Concept",
+        "Artificial Intelligence"
+      ],
+      "description": "Reinforcement Learning from Human Feedback (RLHF) trains a reward model directly from human feedback.  RLHF is useful for tasks lacking clear algorithmic solutions, especially those involving human values or preferences, where humans easily judge output quality. For example, humans can rank AI-generated stories, rejecting poor ones. OpenAI's ChatGPT is a famous example.  A major challenge is the scalability and cost of human feedback, which can be slow, expensive, and potentially biased, inconsistent, or inaccurate."
+    },
+    {
+      "title": "Deep Learning",
+      "tags": [
+        "Concept",
+        "Artificial Intelligence"
+      ],
+      "description": "Deep Learning (DL) is a subset of machine learning that uses deep artificial neural networks to learn representations of complex data.  Because of the multiple layers in a deep neural network, deep learning is typically slower than traditional machine learning, but it often delivers higher performance, efficiency, and accuracy. Deep learning is one of the most advanced areas of artificial intelligence."
+    },
+    {
+      "title": "Semi-Supervised Learning",
+      "tags": [
+        "Concept",
+        "Artificial Intelligence"
+      ],
+      "description": "This is a type of machine learning that uses both labeled and unlabeled data to train a model. It's widely used for classification problems with large datasets, where the goal is to predict an output value based on input values. Semi-supervised training is used when there's a large unlabeled dataset and a small labeled dataset, proving more efficient than supervised training and more accurate than unsupervised training."
+    },
+    {
+      "title": "Supervised Learning",
+      "tags": [
+        "Concept",
+        "Artificial Intelligence"
+      ],
+      "description": "This is a type of machine learning that uses labeled data to train a model. It's used for classification and regression problems, where the goal is to predict an output value based on input values. For example, a machine learning model can be trained to classify images of cats and dogs using a training dataset of labeled cat and dog images. Supervised learning is one of the most common types of machine learning and can be used to solve a wide variety of problems."
+    },
+    {
+      "title": "Zero-Shot Learning",
+      "tags": [
+        "Concept",
+        "Artificial Intelligence"
+      ],
+      "description": "This is a deep learning scenario where, during testing, a model receives samples from classes unseen during training and needs to identify their class. Unlike standard machine learning, where models classify new samples from previously seen classes, zero-shot learning receives no samples from the new data classes during training.  It can be considered an extreme form of domain adaptation. Zero-shot methods typically associate seen and unseen classes using auxiliary information encoding observable properties of the objects. For example, given animal images and textual descriptions of their appearance, an AI model trained to recognize horses, but not zebras, could still recognize a zebra if it knows zebras look like striped horses."
+    },
+    {
+      "title": "Argument",
+      "tags": [
+        "Concept"
+      ],
+      "description": "An argument is a value or piece of information passed to a function or method during its execution.  The function uses these arguments to perform its task or make decisions.  In short, arguments are input data enabling a function to produce a result or perform actions."
+    },
+    {
+      "title": "Data Augmentation",
+      "tags": [
+        "Concept",
+        "Artificial Intelligence"
+      ],
+      "description": "Data augmentation is a data pre-processing technique used to increase the size of a training dataset for a machine learning model by generating new data from existing data. This improves performance and reduces overfitting. For example, an image dataset can be augmented using rotations, zooms, flips, and other geometric transformations."
+    },
+    {
+      "title": "Autoencoder",
+      "tags": [
+        "Concept",
+        "Artificial Intelligence",
+        "Neural Network"
+      ],
+      "description": "It's a type of artificial neural network using an encoder-decoder architecture.  The encoder compresses input data into a latent space, while the decoder reconstructs the data from this latent space.  Common uses include image and video compression, dimensionality reduction, and data augmentation."
+    },
+    {
+      "title": "Batch Size",
+      "tags": [
+        "Concept",
+        "Artificial Intelligence"
+      ],
+      "description": "Batch size is a hyperparameter in machine learning that determines the number of training examples used in one model update. It affects learning speed and performance. Smaller batch sizes require more iterations but less memory, while larger batch sizes are faster but need more memory."
+    },
+    {
+      "title": "Botnet",
+      "tags": [
+        "Concept",
+        "Cybersecurity"
+      ],
+      "description": "A botnet is a network of malware-infected devices (computers, IoT devices like smart TVs and phones) controlled by cybercriminals to perform malicious actions, such as launching Distributed Denial-of-Service (DDoS) attacks on websites."
+    },
+    {
+      "title": "Branch",
+      "tags": [
+        "Concept",
+        "Tool",
+        "Version Control"
+      ],
+      "description": "A branch is a copy of a project at a specific point, allowing parallel development of new features without affecting the main codebase.  Changes are made independently on the branch before merging back into the main project."
+    },
+    {
+      "title": "Bug",
+      "tags": [
+        "Concept"
+      ],
+      "description": "A \"bug\" is a common term for a problem in a program or system. This could be incorrect or unexpected behavior, usually caused by flawed code logic, resulting in software failures during runtime."
+    },
+    {
+      "title": "Neural Architecture Search",
+      "tags": [
+        "Concept",
+        "Artificial Intelligence"
+      ],
+      "description": "Neural Architecture Search (NAS) is an optimization process that uses search algorithms to find the best neural network architecture for a given dataset.  It aims to find the optimal architecture for a specific problem, improving performance and reducing training time compared to manual design."
+    },
+    {
+      "title": "C",
+      "tags": [
+        "Concept"
+      ],
+      "description": "C is a general-purpose, structured, imperative, procedural, compiled programming language standardized by ISO.  Developed in 1972 by Dennis Ritchie at AT&T Bell Labs to build the Unix operating system (originally written in Assembly)."
+    },
+    {
+      "title": "C++",
+      "tags": [
+        "Concept"
+      ],
+      "description": "C++ is a multi-paradigm compiled programming language (supporting imperative, object-oriented, and generic programming) for general-purpose use.  Since the 1990s, it's been one of the most popular commercial languages, also widely used in academia due to its high performance and large community."
+    },
+    {
+      "title": "Cache",
+      "tags": [
+        "Concept"
+      ],
+      "description": "A cache is a temporary storage area used to speed up access to frequently used data in computer systems."
+    },
+    {
+      "title": "Chatbot",
+      "tags": [
+        "Concept",
+        "Artificial Intelligence"
+      ],
+      "description": "A computer program that simulates human conversation via text or voice, often used to automate tasks and provide user support and assistance. Chatbots have applications in customer service, virtual assistants, and many other areas."
+    },
+    {
+      "title": "Class",
+      "tags": [
+        "Concept"
+      ],
+      "description": "In software development, a class is a blueprint for creating objects.  It defines the attributes (data) and methods (functions) of those objects. Classes organize code, promoting reuse and abstraction."
+    },
+    {
+      "title": "Clone",
+      "tags": [
+        "Concept",
+        "Tool",
+        "Version Control"
+      ],
+      "description": "Cloning a repository creates a local copy of a project.  It lets you work on your own version of the code, make changes, and contribute back later."
+    },
+    {
+      "title": "Null Coalescing",
+      "tags": [
+        "Concept"
+      ],
+      "description": "A logical operator that handles null values, returning the right-hand value if the left-hand value is null.",
+      "content": {
+        "code": "let value = desiredValue ?? 42"
+      }
+    },
+    {
+      "title": "Code Review",
+      "tags": [
+        "Concept"
+      ],
+      "description": "Code review is a software development best practice where developers collaborate to evaluate code before release. This improves code quality, team skills, and shared understanding."
+    },
+    {
+      "title": "Code Smells",
+      "tags": [
+        "Concept"
+      ],
+      "description": "Code smells hint at potential problems in code, not necessarily causing errors, but suggesting areas that could lead to future maintenance issues.  They often indicate design flaws or complexity."
+    },
+    {
+      "title": "Commit",
+      "tags": [
+        "Concept"
+      ],
+      "description": "In version control, a commit saves code changes.  A semantic commit has a meaningful purpose.  In databases, a commit finalizes a transaction."
+    },
+    {
+      "title": "Component",
+      "tags": [
+        "Concept"
+      ],
+      "description": "A component is a fundamental and reusable building block for user interfaces. It encapsulates the logic and presentation related to a specific part of the interface. Components can be compared to building blocks that, when combined, form complex interfaces. They promote code organization and maintainability, as they can be developed and tested independently. Components can accept properties (props) as input and render information based on this data, allowing for flexible customization."
+    },
+    {
+      "title": "Cloud Computing",
+      "tags": [
+        "Concept"
+      ],
+      "description": "Generally refers to using computing services, such as file storage and program execution, over the internet. This means you don't need physical equipment, as everything is done online. You can access your data and programs from anywhere, anytime, without worrying about maintaining physical equipment."
+    },
+    {
+      "title": "Dataset",
+      "tags": [
+        "Concept"
+      ],
+      "description": "A dataset is a collection of data used to train and test machine learning models. Different parts of the dataset are typically used for training and testing to avoid overfitting. Parts can also be used for validation and inference. A dataset is composed of multiple examples, which in turn are composed of multiple data points. For example, a cat dataset might contain multiple examples of cats, where each example could be composed of one or more images and several associated attributes, such as size, breed, and color."
+    },
+    {
+      "title": "CORS",
+      "tags": [
+        "Concept"
+      ],
+      "description": "Cross-Origin Resource Sharing is a web security mechanism that determines how a web page can access resources from a different domain. For example, an image or CSS file can usually be shared between different sites without problems, but JavaScript code often has stricter restrictions."
+    },
+    {
+      "title": "CSS",
+      "tags": [
+        "Front-end"
+      ],
+      "description": "Cascading Style Sheets is a mechanism to add styles to a webpage, such as colors, sizes, fonts, etc.  You can link an HTML file to CSS by adding a link to a CSS file containing the styles."
+    },
+    {
+      "title": "Curl",
+      "tags": [
+        "Tool"
+      ],
+      "description": "A tool for transferring data to/from a server, i.e., making a request using various protocols, the most common being HTTP. When you hear the term 'curl x', it means making a request to x, but not necessarily using the curl tool. Curl is widely used because it's simple to use via the command line (terminal), requiring no third-party software for making calls.",
+      "content": {
+        "code": "curl http://www.google.com"
+      }
+    },
+    {
+      "title": "Labeled Data",
+      "tags": [
+        "Concept",
+        "Artificial Intelligence"
+      ],
+      "description": "Also called labeled data, this data has a label or tag indicating what it represents. It's used to train supervised or semi-supervised machine learning models, where the goal is to predict an output value based on a set of input values. For example, a dataset of cat and dog images can be labeled with each image's class, allowing a machine learning model to be trained to classify cat and dog images."
+    },
+    {
+      "title": "DDoS",
+      "tags": [
+        "Concept",
+        "Cybersecurity"
+      ],
+      "description": "A DDoS attack involves many devices attempting to connect to a website simultaneously to overload it."
+    },
+    {
+      "title": "Deploy",
+      "tags": [
+        "Concept"
+      ],
+      "description": "Deployment is a complex process. It means that a developed package has been installed in the environments. A version is generated and made available. This process can also be called deployment depending on the context.  This deployment can be an automated process using tools, or done manually, depending on the structure.  We've adapted the word \"deploy\" into Portuguese as an action. Example: I'm deploying the new version of our system."
+    },
+    {
+      "title": "Vanishing Gradient",
+      "tags": [
+        "Concept",
+        "Artificial Intelligence"
+      ],
+      "description": "Vanishing gradient is a problem that occurs when the gradient of a loss function decreases exponentially during the training of a machine learning model. As gradients frequently become smaller until they are close to zero, the newly calculated model weights will be virtually identical to the old weights, without any update. As a result, the gradient descent algorithm never converges to the optimal solution and the model fails to learn. The vanishing gradient can be caused by several factors, such as a very low learning rate, a poorly designed loss function, among others."
+    },
+    {
+      "title": "Gradient Descent",
+      "tags": [
+        "Concept"
+      ],
+      "description": "Neural network models are generally trained by an optimization algorithm that is a variation of gradient descent. During learning, the input training data helps the model learn, and the loss function evaluates how accurate the prediction performance is for each iteration. As training progresses, the goal is to reduce the loss function/prediction error by iteratively adjusting the parameters. Specifically, the gradient descent algorithm has a forward pass and a backward pass. In the forward pass, the input data is passed through the neural network and the output is calculated. In the backward pass, the gradient of the loss function is calculated with respect to each weight of the neural network, and the weights are updated according to the gradient. Then the algorithm takes a gradient descent step to minimize the loss function (considering the learning rate)."
+    },
+    {
+      "title": "Front-end Development",
+      "tags": [
+        "Front-end"
+      ],
+      "description": "Front-end development is the development of the graphical user interface, allowing users to view and interact with what has been developed."
+    },
+    {
+      "title": "DOM (Document Object Model)",
+      "tags": [
+        "Front-end"
+      ],
+      "description": "A tree-like representation of the HTML elements on a page, allowing for dynamic manipulation of content. Think of it as a map of the page that JavaScript uses to understand and change the content. It's like a 'blueprint' of the page."
+    },
+    {
+      "title": "DoS",
+      "tags": [
+        "Concept",
+        "Cybersecurity"
+      ],
+      "description": "DoS is a denial-of-service attack. In this attack, a single computer makes numerous requests to a website in a short period, aiming to take it down."
+    },
+    {
+      "title": "Early Stopping",
+      "tags": [
+        "Concept",
+        "Artificial Intelligence"
+      ],
+      "description": "Also called early stopping, this is a machine learning model training technique that halts training when model performance stops improving. It's used to prevent overfitting and produce a well-performing model."
+    },
+    {
+      "title": "Embedding",
+      "tags": [
+        "Concept",
+        "Artificial Intelligence"
+      ],
+      "description": "Also called embedding, this is a vector representation of an object, such as a word, phrase, or image. It's used to represent objects more compactly and efficiently, allowing machine learning models to learn relationships between objects. For example, a word can be represented by a vector of real numbers, where each dimension represents an attribute of the word, such as gender, number, tense, etc. This vector representation can be used as input to a machine learning model, allowing it to learn relationships between words, such as synonyms, antonyms, etc."
+    },
+    {
+      "title": "Encapsulation",
+      "tags": [
+        "Concept"
+      ],
+      "description": "Encapsulation acts like a \"black box\" that hides the internal details of an object. This means the data and inner workings of an object are kept private and can't be directly accessed from the outside. Instead, the object provides controlled interfaces (public methods) to interact with it. This helps protect the object's data and control how it's used, promoting code security and organization."
+    },
+    {
+      "title": "Memory Address",
+      "tags": [
+        "Concept"
+      ],
+      "description": "A number uniquely identifying a memory location in the computer. Everything declared in a programming language is stored in the computer's memory, and accessing this data requires knowing the memory address where it's stored."
+    },
+    {
+      "title": "Epoch",
+      "tags": [
+        "Concept",
+        "Artificial Intelligence"
+      ],
+      "description": "From the English word \"epoch,\" it's a complete iteration of a machine learning model over a training dataset.  Training with too few epochs may be insufficient for a model to learn, while too many can cause overfitting."
+    },
+    {
+      "title": "Latent Space",
+      "tags": [
+        "Concept",
+        "Artificial Intelligence"
+      ],
+      "description": "Also called latent feature space or embedding space, it's a vector space (manifold) generated from training a machine learning model. A position within this space is defined by a set of latent variables that emerge from the similarities of objects, so that similar items are positioned closer together. In many cases, the dimensionality of the latent space is chosen to be lower than the dimensionality of the input data space, making its construction an example of dimensionality reduction, which can also be viewed as a form of data compression. The latent space can be completely unintuitive, high-dimensional, complex, and nonlinear, which can increase the difficulty of interpretation. Some visualization techniques have been developed to connect the latent space to the visual world, but there is generally no direct connection between the interpretation of the latent space and the model that generated it. Among these techniques is t-SNE, in which the latent space is mapped to two or three dimensions for visualization. Distances in latent space do not have physical units, therefore, the interpretation of these distances may depend on the application."
+    },
+    {
+      "title": "Exploding Gradient",
+      "tags": [
+        "Concept",
+        "Artificial Intelligence"
+      ],
+      "description": "An issue that occurs when the gradient of a loss function grows exponentially during the training of a machine learning model. This can result in model parameters diverging to infinity, causing the learning process to fail. When gradients explode, weight updates during training can become so large that they cause the model to revert to a large error, as opposed to minimizing it with each iteration. Exploding gradients can be caused by several factors, such as a very high learning rate, a poorly designed loss function, among others."
+    },
+    {
+      "title": "Expo CLI",
+      "tags": [
+        "Mobile"
+      ],
+      "description": "Expo CLI is a tool that simplifies mobile app development for iOS and Android. It's used to quickly create a project with React Native."
+    },
+    {
+      "title": "Finetuning",
+      "tags": [
+        "Concept",
+        "Artificial Intelligence"
+      ],
+      "description": "Also called fine-tuning, it's the process of training a pre-trained machine learning model on a new dataset. It's used to adapt a base model to a specific task, improving its performance and reducing training time compared to training from scratch. Finetuning is commonly used in computer vision and natural language processing models."
+    },
+    {
+      "title": "Fork",
+      "tags": [
+        "Concept",
+        "Tool",
+        "Versioning"
+      ],
+      "description": "Forking is like creating an independent copy of a project.  It's as if you take someone else's project, branch it, and have it in your own account. This lets you make your own changes without affecting the original project. It's common practice in open-source projects."
+    },
+    {
+      "title": "Frameworks",
+      "tags": [
+        "Concept",
+        "Framework"
+      ],
+      "description": "These are like collections of tools, components, and solutions bundled together in a single package (the framework) that make it easier to build complex applications."
+    },
+    {
+      "title": "Function",
+      "tags": [
+        "Concept"
+      ],
+      "description": "A function is a block of code that performs a specific task and can be called from other parts of a program. It helps organize and reuse code, making software more modular and readable. Functions receive inputs (called arguments) and may return a result (return value) or simply perform an action."
+    },
+    {
+      "title": "Nonlinear Activation Function",
+      "tags": [
+        "Concept",
+        "Artificial Intelligence"
+      ],
+      "description": "Also called an activation function, it's a mathematical function applied to the output of neurons in an artificial neural network. It's used to introduce non-linearities into an artificial neural network, modifying the output value of each neuron in a layer before passing it to the next layer, allowing the network to learn complex relationships between input and output data. For example, the most commonly used nonlinear activation function is the ReLU (Rectified Linear Unit) function, which returns 0 if the input value is negative and returns the input value otherwise."
+    },
+    {
+      "title": "Loss Function",
+      "tags": [
+        "Concept",
+        "Artificial Intelligence"
+      ],
+      "description": "Also called a cost function, it's a mathematical function that measures the difference between the value predicted by a machine learning model and the actual value of the training data. It's used to evaluate the accuracy of a machine learning model and adjust its parameters to improve its performance. There are various types of loss functions, each suitable for a different type of machine learning problem."
+    },
+    {
+      "title": "Garbage Collector",
+      "tags": [
+        "Concept"
+      ],
+      "description": "A garbage collector is a tool that automatically frees up space in a computer's memory.  Imagine that when developing a program, you use memory blocks to store information. Over time, some of these blocks become unnecessary. The garbage collector identifies these \"useless\" blocks and cleans them up, returning the space to the system for reuse. This is especially useful in programming languages like Java, C#, and JavaScript, where this process happens automatically, helping to prevent problems and making the computer faster."
+    },
+    {
+      "title": "Git",
+      "tags": [
+        "Concept",
+        "Tool",
+        "Version Control"
+      ],
+      "description": "Git is a widely used distributed version control system for tracking changes to files and coordinating work on software development projects."
+    },
+    {
+      "title": "GitHub",
+      "tags": [
+        "Concept",
+        "Tool",
+        "Version Control"
+      ],
+      "description": "GitHub is a web-based source code hosting platform that offers a variety of services related to version control and collaboration in software development (it's used in conjunction with Git). It's widely used by developers worldwide to store, collaborate on, manage, and control the source code of software projects."
+    },
+    {
+      "title": "GPT",
+      "tags": [
+        "Concept",
+        "Artificial Intelligence",
+        "Neural Network"
+      ],
+      "description": "GPT (Generative Pre-trained Transformer) is a large language model created by OpenAI. It can generate high-quality text, such as news articles, poetry, and fiction, based on a short piece of text as input. It's one of the most advanced language models in the world and is capable of performing a wide variety of natural language tasks, such as machine translation, text summarization, code generation, and more.  Recent versions also support other data types, such as images."
+    },
+    {
+      "title": "Gradient",
+      "tags": [
+        "Concept"
+      ],
+      "description": "The gradient simply measures how much the output of a function changes if you slightly change the inputs. It measures the change in all the neural network weights relative to the difference in the calculated error. You can also think of a gradient as the slope of a function. The larger the gradient, the steeper the slope and the faster a model can learn. But if the slope is zero, the model stops learning. Mathematically, a gradient is a partial derivative with respect to its inputs."
+    },
+    {
+      "title": "Large Language Model",
+      "tags": [
+        "Concept",
+        "Artificial Intelligence"
+      ],
+      "description": "Also known as a large language model (LLM), it's a language model that uses deep learning to learn representations of natural language data. It's trained on massive datasets of text, such as books, news articles, and web pages, and is capable of interpreting and generating high-quality text. Large language models are used as foundational models for various natural language applications, such as machine translation, text summarization, code generation, and more."
+    },
+    {
+      "title": "Inheritance",
+      "tags": [
+        "Concept"
+      ],
+      "description": "Inheritance works like a \"family tree.\" It allows a class or object to inherit characteristics and behaviors from another parent class. This means the child class inherits the attributes and methods of the parent class, saving time and promoting code reuse. Inheritance is a way to organize and structure code, creating class hierarchies that represent relationships between real-world objects."
+    },
+    {
+      "title": "Hyperparameter",
+      "tags": [
+        "Concept",
+        "Artificial Intelligence"
+      ],
+      "description": "Also called a training parameter, it's a parameter of a machine learning model that is not altered during training. It's used to control the behavior of a machine learning model and can be tuned to improve its performance."
+    },
+    {
+      "title": "HTML",
+      "tags": [
+        "Front-end"
+      ],
+      "description": "HTML is a markup language used for creating web pages. HTML documents can be rendered by web browsers."
+    },
+    {
+      "title": "IDE",
+      "tags": [
+        "Tool"
+      ],
+      "description": "IDE stands for Integrated Development Environment. It's a program with graphical interfaces that ease developer interaction in application creation.  An IDE typically includes a source code editor and debugging tools to identify and fix errors. Popular IDE examples include Android Studio, Eclipse, and Visual Studio Code."
+    },
+    {
+      "title": "Continuous Integration",
+      "tags": [
+        "Concept"
+      ],
+      "description": "Continuous Integration is the practice of frequently testing code additions to a project. This prevents bugs and errors from accumulating by efficiently performing specific tests that verify the integration of each part."
+    },
+    {
+      "title": "Artificial Intelligence",
+      "tags": [
+        "Concept",
+        "Artificial Intelligence"
+      ],
+      "description": "Also called AI, it's a field of computer science that studies how computers can simulate human intelligence and cognition. It focuses on developing systems capable of performing tasks previously only possible for humans, such as speech recognition, decision-making, language translation, and pattern recognition. AI is a broad field encompassing various subareas, including machine learning, natural language processing, and computer vision, among others."
+    },
+    {
+      "title": "Issue",
+      "tags": [
+        "Concept",
+        "Versioning"
+      ],
+      "description": "An 'issue' is like a ticket noting a problem or something to be done in a project. It's a reminder that can be used to discuss bugs, request new features, talk about improvements, or track a task."
+    },
+    {
+      "title": "JavaScript",
+      "tags": [
+        "Back-end",
+        "Front-end"
+      ],
+      "description": "JavaScript is a high-level, interpreted, dynamically typed, multi-paradigm scripting language. Along with HTML and CSS, JavaScript is one of the three core technologies of World Wide Web content production."
+    },
+    {
+      "title": "jQuery",
+      "tags": [
+        "Library",
+        "Front-end"
+      ],
+      "description": "A JavaScript library that interacts with HTML much faster and simpler than using plain JavaScript."
+    },
+    {
+      "title": "JSON",
+      "tags": [
+        "Concept"
+      ],
+      "description": "JSON stands for JavaScript Object Notation.  It's a file type with a structure comprised of data names and values. Depending on the type of API we build, we use JSON format to transfer data between systems. For example: An API querying clients in your business. The API response may come in JSON format.",
+      "content": {
+        "code": "`{name: 'Morganna', cpf: '000.000.000-00', email: 'email@email.com'}`"
+      }
+    },
+    {
+      "title": "Loop",
+      "tags": [
+        "Concept"
+      ],
+      "description": "A loop is a control structure that repeatedly executes a block of code as long as a condition is true.  It's used to automate repetitive tasks, saving time and effort.  There are several types of loops, such as 'for' loops, 'while' loops, and 'do-while' loops."
+    },
+    {
+      "title": "Lambda",
+      "tags": [
+        "Concept"
+      ],
+      "description": "A lambda is an anonymous function in programming that can be defined and used without a specific name, often used for simple, single-line expressions.",
+      "content": {
+        "code": "sum = lambda x, y: x + y"
+      }
+    },
+    {
+      "title": "Low-Level Language",
+      "tags": [
+        "Concept"
+      ],
+      "description": "A programming language with little or no abstraction from the computer. It's a programming language that is closer to machine language."
+    },
+    {
+      "title": "Manifold",
+      "tags": [
+        "Concept"
+      ],
+      "description": "In differential geometry, a manifold is a high-dimensional topological space (surface) that locally resembles Euclidean space. In machine learning, a manifold is a space of latent features that can be generated from training a machine learning model. The manifold hypothesis suggests that high-dimensional data (e.g., real-world data like images and videos) lie on a lower-dimensional space where relationships between the data are more easily identified. The idea is that by mapping the data to a lower-dimensional space, patterns and relationships can be found more easily than in the original high-dimensional space."
+    },
+    {
+      "title": "Merge",
+      "tags": [
+        "Concept",
+        "Tool",
+        "Version Control"
+      ],
+      "description": "Merging is like putting together pieces of a puzzle in code development. It's when you combine changes from different parts of the code to create a unified version. Imagine blending the work of a team that added new features back into the main project. That's merging – bringing everything together into a single development line."
+    },
+    {
+      "title": "Metric",
+      "tags": [
+        "Concept",
+        "Artificial Intelligence"
+      ],
+      "description": "Also called an evaluation metric, it's a measure used to assess the accuracy or performance of a machine learning model.  Several types of metrics exist, each suited to a different type of problem."
+    },
+    {
+      "title": "Mobile First",
+      "tags": [
+        "Concept",
+        "Front-end"
+      ],
+      "description": "This concept dictates that when creating a website, we should first address the needs of mobile devices."
+    },
+    {
+      "title": "Base Models",
+      "tags": [
+        "Concept",
+        "Artificial Intelligence"
+      ],
+      "description": "Also called foundation models, these are machine learning models pre-trained on large datasets and commonly made available for third-party use. They are used as base models for various applications of computer vision, natural language processing, among others. Base models can be used frozen, as a feature extraction layer, or fine-tuned, generating a complete model."
+    },
+    {
+      "title": "Node.js",
+      "tags": [
+        "Back-end"
+      ],
+      "description": "Node.js is an environment that allows you to run JavaScript on the server. This means we can use JavaScript to create and run server-side applications."
+    },
+    {
+      "title": "Normalization",
+      "tags": [
+        "Concept",
+        "Artificial Intelligence"
+      ],
+      "description": "It's a data processing technique used to transform data to a common scale. It's used to improve the performance of machine learning models by reducing variance and training time. Several normalization techniques exist, such as batch normalization, layer normalization, weight normalization, among others."
+    },
+    {
+      "title": "NoSQL",
+      "tags": [
+        "Concept"
+      ],
+      "description": "NoSQL (Not Only SQL) is a database approach that allows for flexible and scalable data storage, retrieval, and management, without the rigid structure of relational tables, making it suitable for unstructured or semi-structured data."
+    },
+    {
+      "title": "Object",
+      "tags": [
+        "Concept"
+      ],
+      "description": "In software development, an object is like a character in a video game. It has characteristics (data) and can do things (methods). For example, a \"car\" object might have color, speed, and make (characteristics) and can accelerate, brake, and turn (actions/methods). Objects are instances of classes and help organize code to represent real-world entities, making it more understandable and reusable."
+    },
+    {
+      "title": "Ternary Operator",
+      "tags": [
+        "Concept"
+      ],
+      "description": "The ternary conditional operator is a short way to choose between two options based on a condition.  It works like this: if the condition is true, it returns the first result; if it's false, it returns the second. It's like a compact version of an \"if-else\" statement on a single line.",
+      "content": {
+        "code": "Expression(condition) ? True(exp1) : False(exp2);"
+      }
+    },
+    {
+      "title": "Optional Chaining",
+      "tags": [
+        "Concept"
+      ],
+      "description": "Optional chaining is a JavaScript feature for handling situations where you need to access properties of nested objects but aren't sure if those properties actually exist. This helps avoid 'TypeError' errors when trying to access something that's undefined.",
+      "content": {
+        "code": "const person = name?.city?.address;"
+      }
+    },
+    {
+      "title": "ORM",
+      "tags": [
+        "Back-end",
+        "Concept"
+      ],
+      "description": "Object-Relational Mapping (ORM) is how we translate database tables into code, turning them into classes and objects."
+    },
+    {
+      "title": "ORM",
+      "tags": [
+        "Back-end",
+        "Concept"
+      ],
+      "description": "Object-Relational Mapping (ORM) is how we translate database tables into code, turning them into classes and objects."
+    },
+    {
+      "title": "Optimizer",
+      "tags": [
+        "Concept",
+        "Artificial Intelligence"
+      ],
+      "description": "Also called an optimization algorithm, it's an algorithm that adjusts the parameters of a machine learning model to minimize the loss function. It's used to train machine learning models and improve their performance."
+    },
+    {
+      "title": "Overfitting",
+      "tags": [
+        "Concept",
+        "Artificial Intelligence"
+      ],
+      "description": "Also known as overfitting, this is a problem that occurs when a machine learning model fits the training data too well but fails to generalize to new data. This is noticeable when the model performs very well on training data metrics but poorly on test data. Overfitting can be caused by several factors, such as an overly complex model or a very small training dataset, among others."
+    },
+    {
+      "title": "Pair Programming",
+      "tags": [
+        "Concept"
+      ],
+      "description": "Pair programming means programming in pairs. It's a technique where two (or more) people work together on a task. This helps in the exchange of knowledge and experience between developers. Two heads are better than one, right? Some ways to apply pair programming: one person works on the code while receiving guidance from the other, and they switch roles; one person develops the tests and the other develops the functionality. Don't see pair programming as a waste of time. Good integration and a sense of team support can make all the difference in the quality of the delivered work."
+    },
+    {
+      "title": "Parameter",
+      "tags": [
+        "Concept"
+      ],
+      "description": "A parameter is a piece of information passed to a function or method as part of its call."
+    },
+    {
+      "title": "Named Parameter",
+      "tags": [
+        "Concept"
+      ],
+      "description": "This is a way to pass values to a function or method by specifying the name of the corresponding parameter."
+    },
+    {
+      "title": "Polymorphism",
+      "tags": [
+        "Concept"
+      ],
+      "description": "Polymorphism allows objects of different types to behave similarly through a shared interface."
+    },
+    {
+      "title": "Pointers",
+      "tags": [
+        "Concept"
+      ],
+      "description": "A pointer is a data type in a programming language that stores or refers to the memory address of another value located in computer memory. A pointer refers to a location in memory and retrieves the value at that location. As such, a pointer is a data type that 'points' to a value.",
+      "content": {
+        "code": "int *pointer; // pointer to an integer in C/C++"
+      }
+    },
+    {
+      "title": "CSS Preprocessors",
+      "tags": [
+        "Front-end"
+      ],
+      "description": "CSS preprocessors are tools that simplify creating styles for websites. They enable more complex styles that can be reused across different parts of a site. Think of them as smarter ways to pick colors and fonts to make a website both beautiful and functional. Examples: SASS/SCSS and LESS"
+    },
+    {
+      "title": "Preprocessing",
+      "tags": [
+        "Concept",
+        "Artificial Intelligence"
+      ],
+      "description": "Also called data preprocessing, this is the process of transforming raw data into a format suitable for data analysis.  It's commonly used to prepare data for training machine learning models, thereby improving their performance. Preprocessing involves several steps, including data cleaning, normalization, transformation, dimensionality reduction, and more."
+    },
+    {
+      "title": "Natural Language Processing",
+      "tags": [
+        "Concept",
+        "Artificial Intelligence"
+      ],
+      "description": "Also known as NLP, this is a field of artificial intelligence that studies how computers can understand and interpret human language. It focuses on developing systems that can analyze, understand, and generate natural language, allowing computers to process and respond to written information. NLP is used in a wide variety of applications, including chatbots, machine translation, sentiment analysis, and more."
+    },
+    {
+      "title": "Object-Oriented Programming",
+      "tags": [
+        "Concept",
+        "Paradigm"
+      ],
+      "description": "Object-Oriented Programming (OOP) is a programming paradigm based on the concept of modeling software around objects, which are instances of classes. Each object contains attributes (data) and methods (functions) that operate on that data. This allows for more modular, reusable, and real-world object-oriented code organization. OOP promotes concepts like encapsulation, inheritance, and polymorphism, facilitating the creation of more flexible, understandable, and scalable systems."
+    },
+    {
+      "title": "Property",
+      "tags": [
+        "Concept"
+      ],
+      "description": "Properties, often shortened to 'props', are mechanisms for passing data from a parent component to a child component. They customize a component's behavior and appearance. For example, when creating a button, you might pass properties like background color, displayed text, and text size as props. Props are crucial for making components reusable and configurable, adapting them to various contexts."
+    },
+    {
+      "title": "Pull Request",
+      "tags": [
+        "Concept",
+        "Version Control"
+      ],
+      "description": "A pull request is a change request within a project.  This request can be to fix a bug, add a feature, suggest changes, or for other reasons. It allows for evaluation of the changes, ensuring they're relevant to the project's current state. The request may remain pending until approved by responsible individuals or those with the necessary permissions. Additional rules, such as successful application builds and test runs, can be added as needed."
+    },
+    {
+      "title": "Python",
+      "tags": [
+        "Back-end"
+      ],
+      "description": "Python is a widely used programming language for web applications, software development, data science, and machine learning (ML). Developers use Python for its efficiency, ease of learning, and cross-platform compatibility."
+    },
+    {
+      "title": "React",
+      "tags": [
+        "Concept",
+        "Front-end"
+      ],
+      "description": "React is an open-source JavaScript library for building interactive and dynamic user interfaces in web applications and other environments like mobile, TV, and virtual reality.  Its component-based programming model and efficient UI updates make it a popular choice in front-end development."
+    },
+    {
+      "title": "React Native",
+      "tags": [
+        "Mobile"
+      ],
+      "description": "It's a JavaScript framework based on React for cross-platform mobile app development."
+    },
+    {
+      "title": "Automatic Speech Recognition",
+      "tags": [
+        "Concept",
+        "Artificial Intelligence"
+      ],
+      "description": "A field of artificial intelligence focused on developing systems that analyze and understand human speech, enabling computers to transcribe and process audio into text.  Automatic Speech Recognition (ASR) and Natural Language Processing (NLP) are related but distinct AI categories. ASR focuses on converting spoken words into text and symbols, while NLP converts text into a structured format a computer can understand and process. ASR is used in various applications, including virtual assistants, navigation systems, and audio transcription."
+    },
+    {
+      "title": "Recursion",
+      "tags": [
+        "Concept"
+      ],
+      "description": "Recursion is a method/function that calls itself to solve a problem."
+    },
+    {
+      "title": "Generative Adversarial Network",
+      "tags": [
+        "Concept",
+        "Artificial Intelligence",
+        "Neural Network"
+      ],
+      "description": "From the English, Generative Adversarial Network or GAN, is a type of artificial neural network composed of two competing neural networks trained adversarially. The generative neural network is trained to generate new data, while the discriminative network is trained to distinguish between real and fake data. In this way, the two neural networks compete with each other, leading to continuous improvement of both and generating two specialized models, which can be used independently after training. The generative model is often used to generate new, more realistic images, videos, audio, and text, such as human faces, videos of people speaking, audio of people singing, and news articles. The discriminative model is commonly used for fake data identification."
+    },
+    {
+      "title": "Artificial Neural Network",
+      "tags": [
+        "Concept",
+        "Artificial Intelligence",
+        "Neural Network"
+      ],
+      "description": "It is a computational model inspired by the central nervous system of an animal, consisting of a set of interconnected processing units, called artificial neurons, that simulate how neurons communicate with each other. Artificial Neural Networks (ANNs) are used to solve complex and non-linear problems, such as pattern recognition, speech recognition, computer vision, among others."
+    },
+    {
+      "title": "Convolutional Neural Network",
+      "tags": [
+        "Concept",
+        "Artificial Intelligence",
+        "Neural Network"
+      ],
+      "description": "It is a type of artificial neural network that uses a mathematical operation called convolution in one or more of its layers. From the English, Convolutional Neural Network or CNN, it is frequently used to process input data that has a matrix structure, such as images, and is widely used in computer vision applications, such as image and video recognition."
+    },
+    {
+      "title": "Generative Neural Network",
+      "tags": [
+        "Concept",
+        "Artificial Intelligence",
+        "Neural Network"
+      ],
+      "description": "A type of artificial neural network that generates new data based on a training dataset. This data is usually variations of the input data, such as changes in a person's expressions in a video. It's often used to generate new images, videos, audio, and text, and can be used for data augmentation."
+    },
+    {
+      "title": "Deep Neural Network",
+      "tags": [
+        "Concept",
+        "Artificial Intelligence",
+        "Neural Network"
+      ],
+      "description": "From the English, Deep Neural Network or DNN, is a type of artificial neural network with multiple layers of interconnected processing units. It's called a deep neural network because of the number of hidden layers used in the deep learning model. While a basic neural network consists of an input layer, an output layer, and a few intermediate layers (also called hidden layers), a deep neural network has many hidden processing layers, potentially hundreds. These additional layers give these networks the ability to make more accurate predictions compared to a simpler neural network, but they require millions of sample data points and hundreds of hours of training."
+    },
+    {
+      "title": "Recurrent Neural Network",
+      "tags": [
+        "Concept",
+        "Artificial Intelligence",
+        "Neural Network"
+      ],
+      "description": "From the English, Recurrent Neural Network or RNN, is a type of artificial neural network that uses loops and states to process data. It's frequently used to process sequential input data, such as text, audio, video, and time series, and is widely used in natural language processing applications like machine translation, speech recognition, and sentiment analysis."
+    },
+    {
+      "title": "Repository",
+      "tags": [
+        "Concept",
+        "Tool",
+        "Version Control"
+      ],
+      "description": "A repository is essentially a container that holds all the material for your project. Think of it as a place where you store code, change history, and other important files. There are local repositories on your computer and remote repositories on shared servers."
+    },
+    {
+      "title": "Responsiveness",
+      "tags": [
+        "Front-end"
+      ],
+      "description": "The ability of a website or application to adapt to different screen sizes and devices, such as smartphones, tablets, and desktops."
+    },
+    {
+      "title": "Ruby",
+      "tags": [
+        "Back-end",
+        "Concept"
+      ],
+      "description": "Ruby is a dynamically-typed, strongly-typed, interpreted, multi-paradigm programming language with automatic garbage collection.  It supports functional, object-oriented, imperative, and reflective programming.  It's like a digital toolbox that can create, organize, and interact with different parts of a computer program, handling various programming styles."
+    },
+    {
+      "title": "Scrum",
+      "tags": [
+        "Back-end"
+      ],
+      "description": "A project management methodology where work is divided into short cycles called sprints, typically lasting a few weeks. The team collaborates closely, meeting regularly to plan, review, and adapt the work. The goal is to deliver value iteratively and rapidly, responding to changes and feedback as the project progresses."
+    },
+    {
+      "title": "SOLID",
+      "tags": [
+        "Concept"
+      ],
+      "description": "The SOLID principles are five guidelines for object-oriented software design, promoting more flexible, robust, and maintainable systems.  These are: Single Responsibility Principle (a class should have only one responsibility), Open/Closed Principle (classes should be open for extension, but closed for modification), Liskov Substitution Principle (subtypes should be substitutable for their types without altering the correctness of the program), Interface Segregation Principle (clients should not be forced to depend upon interfaces they don't use), and Dependency Inversion Principle (high-level modules should not depend on low-level modules; both should depend on abstractions)."
+    },
+    {
+      "title": "Spread Operator",
+      "tags": [
+        "Concept"
+      ],
+      "description": "The spread operator is a feature in many programming languages that allows copying and combining elements from one data structure into another, facilitating efficient data manipulation."
+    },
+    {
+      "title": "SQL",
+      "tags": [
+        "Back-end",
+        "Concept"
+      ],
+      "description": "Structured Query Language (SQL) is a programming language used to manage data in relational database management systems. It's a language that lets us interact with databases to perform actions such as retrieving, adding, updating, and deleting information."
+    },
+    {
+      "title": "Stack Navigation",
+      "tags": [
+        "Mobile"
+      ],
+      "description": "In the context of React Native, this is a navigation technique between app screens, typically involving back and forward buttons."
+    },
+    {
+      "title": "Stateful Widget",
+      "tags": [
+        "Concept",
+        "Mobile"
+      ],
+      "description": "In Flutter, a StatefulWidget is a component with mutable internal state, allowing it to respond to state changes and dynamically update the user interface."
+    },
+    {
+      "title": "Stateless Widget",
+      "tags": [
+        "Concept",
+        "Mobile"
+      ],
+      "description": "In Flutter, a StatelessWidget is a component without mutable internal state, ideal for parts of the UI that don't change over time and don't depend on state."
+    },
+    {
+      "title": "Swift",
+      "tags": [
+        "Mobile"
+      ],
+      "description": "Swift is a programming language created by Apple.  You can use it to develop apps for Apple devices and operating systems, such as iPhones (iOS), Macs (macOS), Apple Watches (watchOS), and Apple TVs (tvOS)."
+    },
+    {
+      "title": "SwiftUI",
+      "tags": [
+        "Mobile"
+      ],
+      "description": "SwiftUI is an Apple framework for creating the visual part of apps using the Swift language. Unlike the more traditional UIKit, SwiftUI lets you describe the user interface in a simpler, more straightforward way, making both creation and maintenance of your code easier."
+    },
+    {
+      "title": "HTML/XML Tag",
+      "tags": [
+        "Concept"
+      ],
+      "description": "A tag is a markup element used in markup languages like HTML and XML to define the structure and meaning of a document. They define the start and end of an element, such as a paragraph, table, or image. Tags are written between less-than and greater-than signs, like `<tag>`, with the end of an element defined as `</tag>`. If an element has no children, it can be defined as `<tag />` instead of `<tag></tag>`."
+    },
+    {
+      "title": "Learning Rate",
+      "tags": [
+        "Concept",
+        "Artificial Intelligence"
+      ],
+      "description": "Also called the learning rate (LR), it's a hyperparameter in machine learning model training that controls how quickly a machine learning model learns. It's one of the most important hyperparameters of a machine learning model and can be tuned to improve model performance. It controls the size of the step taken during learning towards the minimum calculated by the gradient. A learning rate that is too high can cause gradient explosion, while a learning rate that is too low can cause gradient vanishing. Several techniques allow modifying the learning rate during training, such as learning rate decay, learning rate scheduling, and learning rate warm-up, among others."
+    },
+    {
+      "title": "Transfer Learning",
+      "tags": [
+        "Concept",
+        "Artificial Intelligence"
+      ],
+      "description": "It's a machine learning technique where knowledge learned from one task is reused to improve performance on a related task. For example, knowledge gained from learning to recognize cars can be applied when trying to segment car images. In transfer learning, the model being transferred is called the source model, and the model to which it's transferred is called the target model. The source and target tasks are different but related, and the source task is used to assist in learning the target task. Source and target data can be of the same modality (e.g., images) or different modalities (e.g., images and text)."
+    },
+    {
+      "title": "Transformer",
+      "tags": [
+        "Concept",
+        "Artificial Intelligence",
+        "Neural Network"
+      ],
+      "description": "It's a type of artificial neural network that uses an encoder-decoder architecture to process input data. Transformer models apply a set of mathematical techniques, called attention or self-attention, to detect the subtle ways even distant data elements in a sequence influence and depend on each other. By finding patterns between elements mathematically, transformers eliminate the need for large labeled datasets, which are expensive and time-consuming to produce. Any application using sequential data from text, images, or videos is a candidate for transformer models."
+    },
+    {
+      "title": "Adversarial Training",
+      "tags": [
+        "Concept",
+        "Artificial Intelligence"
+      ],
+      "description": "It's a type of machine learning training that uses an adversarial model to train a model. In it, two machine learning models are trained adversarially, where one model is responsible for generating fake data and another model is responsible for identifying fake data. Adversarial training is used to generate realistic fake data, which can be used to augment a training dataset."
+    },
+    {
+      "title": "UI Design",
+      "tags": [
+        "Concept",
+        "Design",
+        "Front-end"
+      ],
+      "description": "It's the design and execution of a user interface. For example, ensuring a button is visible and clickable."
+    },
+    {
+      "title": "UIKit",
+      "tags": [
+        "Mobile"
+      ],
+      "description": "UIKit is a framework provided by Apple for building the visual parts of iOS apps. It provides a set of classes and components to construct and manage the interface, including elements like buttons, tables, views, and gestures."
+    },
+    {
+      "title": "UML",
+      "tags": [
+        "Back-end"
+      ],
+      "description": "It's a visual language that software developers use to describe and design software systems. It offers different types of diagrams, such as class, sequence, and activity diagrams, to represent different aspects of a system. These diagrams help teams better understand and communicate software ideas and designs."
+    },
+    {
+      "title": "Underfitting",
+      "tags": [
+        "Concept",
+        "Artificial intelligence"
+      ],
+      "description": "Also called subfitting, this is a problem that occurs when a machine learning model doesn't fit the training data well and fails to generalize to new data. This is noticed when the model performs poorly on both training and test data. Underfitting can be caused by several factors, such as an overly simple model or a very small training dataset, among others."
+    },
+    {
+      "title": "UX Design",
+      "tags": [
+        "Concept",
+        "Design",
+        "Front-end"
+      ],
+      "description": "It's the design and execution of a user experience. For example, designing actions that will make a person feel good when entering a page, or engaged, etc."
+    },
+    {
+      "title": "Computed variable",
+      "tags": [
+        "Concept"
+      ],
+      "description": "This is a variable that doesn't store a value directly; it calculates or derives its value from other variables or data."
+    },
+    {
+      "title": "Typed variable",
+      "tags": [
+        "Concept"
+      ],
+      "description": "A typed variable is one that has a data type associated with it."
+    },
+    {
+      "title": "Version Control",
+      "tags": [
+        "Concept",
+        "Versioning"
+      ],
+      "description": "Code versioning is the tracking and recording of changes made to a project over time, keeping a history of modifications to the source code."
+    },
+    {
+      "title": "TypeScript",
+      "tags": [
+        "Concept",
+        "Front-end",
+        "Back-end"
+      ],
+      "description": "TypeScript is a superset of JavaScript that adds optional static typing, allowing developers to identify errors during code writing."
+    },
+    {
+      "title": "Next.js",
+      "tags": [
+        "Concept",
+        "Framework"
+      ],
+      "description": "Next.js is a React framework for building web applications with server-side rendering, improving SEO and performance."
+    },
+    {
+      "title": "NPM",
+      "tags": [
+        "Concept",
+        "Tool"
+      ],
+      "description": "NPM (Node Package Manager) is a package manager for JavaScript, enabling the installation and management of libraries and dependencies in projects."
+    },
+    {
+      "title": "SDK",
+      "tags": [
+        "Concept",
+        "Mobile"
+      ],
+      "description": "An SDK (Software Development Kit) is a collection of tools, libraries, and documentation that helps developers build applications for a specific platform."
+    },
+    {
+      "title": "Yarn",
+      "tags": [
+        "Concept",
+        "Tool"
+      ],
+      "description": "Yarn is a package manager that lets you install, update, and manage dependencies for JavaScript projects, offering faster speeds and improved security compared to NPM."
+    },
+    {
+      "title": "Computer Vision",
+      "tags": [
+        "Concept",
+        "Artificial Intelligence"
+      ],
+      "description": "It's a field of artificial intelligence that studies how computers can acquire and process information from visual stimuli. It focuses on developing systems that can analyze and understand images and videos, enabling computers to recognize objects, people, places, movements, and other visual elements. Computer vision (CV) is used in a wide variety of applications, such as facial recognition, self-driving cars, and medical diagnosis, among others."
+    },
+    {
+      "title": "XML",
+      "tags": [
+        "Concept"
+      ],
+      "description": "XML (eXtensible Markup Language) is a markup language that defines a set of rules for encoding documents.  Similar to HTML, it's a markup language, but XML is designed to be more flexible, allowing the creation of new tags, unlike HTML's limited predefined tags. It's a general-purpose language that can be used to represent any type of structured data. XML is very popular and used in databases, system configuration files, data transmission, and more."
+    }
+  ]  
+}

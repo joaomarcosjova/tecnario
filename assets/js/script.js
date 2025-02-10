@@ -1,6 +1,125 @@
 import "./dark_mode.js";
 import { levenshtein } from "./levenshtein.js";
 
+const translations = {
+  pt: {
+    title: "Dicionário de Tecnologia",
+    subtitle: "Um dicionário que simplifica termos tecnológicos. 📖",
+    donate: "Doar",
+    searchPlaceholder: "Pesquisar...",
+    filterLabel: "Filtrar por categoria:",
+    // tagsFilter: "Todos",
+    darkModeToggle: "Mudar tema",
+    cookiesMessage: "O Diciotech usa cookies para garantir que você obtenha uma melhor experiência.",
+    cookiesButton: "Concordar e fechar"
+  },
+  en: {
+    title: "Technology Dictionary",
+    subtitle: "A dictionary that simplifies technological terms. 📖",
+    donate: "Donate",
+    searchPlaceholder: "Search...",
+    filterLabel: "Filter by category:",
+    // tagsFilter: "All",
+    darkModeToggle: "Change theme",
+    cookiesMessage: "This site uses cookies to enhance your experience.",
+    cookiesButton: "Agree and close"
+  }
+};
+
+function changeLanguage(lang) {
+  document.querySelector(".header__title").innerText = translations[lang].title;
+  document.querySelector(".header__subtitle").innerText = translations[lang].subtitle;
+  document.querySelector(".button-donate p").innerText = translations[lang].donate;
+  document.querySelector("#search-input").placeholder = translations[lang].searchPlaceholder;
+  document.querySelector(".filter_label").innerText = translations[lang].filterLabel;
+  document.querySelector(".cookies-message").innerText = translations[lang].cookiesMessage;
+  document.querySelector(".cookies-accept-button").innerText = translations[lang].cookiesButton;
+
+  // Dark mode toggle 
+  document.querySelector("#dark-mode-toggle").title = translations[lang].darkModeToggle;
+
+  //Tag Filter
+//   document.querySelector(".filter_label").innerText = translations[lang].filterLabel;
+
+//   const filterDropdown = document.querySelector("#tags-filter");
+//   const firstOption = filterDropdown.options[0]; // Get the first option
+
+//   if (firstOption) {
+//     firstOption.value = translations[lang].tagsFilter.toLowerCase(); // Change value
+//     firstOption.textContent = translations[lang].tagsFilter; // Change text
+//   }
+}
+
+// Event listener for language change
+document.getElementById("language-switcher").addEventListener("change", (e) => {
+  const selectedLang = e.target.value;
+  changeLanguage(selectedLang);
+});
+
+
+  let currentLang = localStorage.getItem("preferredLanguage") || "pt"; // Default to Portuguese
+  let languageData = {}; // Store JSON content
+  
+  // Function to load the correct language file
+  function loadLanguage(lang) {
+    const filePath = lang === "en" ? "./assets/data/cards_en-gb.json" : "./assets/data/cards_pt-br.json"; 
+  
+    fetch(filePath)
+      .then(response => response.json())
+      .then(data => {
+        languageData = data;
+        updateContent();
+      })
+      .catch(error => console.error("Error loading JSON:", error));
+  }
+  
+  // Function to update the website content
+  function updateContent() {
+    document.querySelectorAll("[data-translate]").forEach(element => {
+      const key = element.getAttribute("data-translate");
+      const keys = key.split("."); // Handles nested JSON structure
+      let value = languageData;
+  
+      // Traverse JSON keys
+      keys.forEach(k => value = value[k]);
+  
+      if (element.tagName === "INPUT") {
+        element.setAttribute("placeholder", value); // Update placeholders
+      } else {
+        element.textContent = value; // Update text content
+      }
+    });
+  }
+  
+  // Event Listener for Language Switcher
+//   document.querySelector("#language-switcher").addEventListener("change", (event) => {
+//     const selectedLang = event.target.value;
+//     localStorage.setItem("preferredLanguage", selectedLang);
+//     changeLanguage(selectedLang);
+//   });
+  
+  // Load saved language preference
+//   document.addEventListener("DOMContentLoaded", () => {
+//     const savedLang = localStorage.getItem("preferredLanguage") || "pt";
+//     document.querySelector("#language-switcher").value = savedLang;
+//     changeLanguage(savedLang);
+//   });
+
+
+  document.getElementById("language-switcher").addEventListener("change", function () {
+    const selectedLanguage = this.value; // Get the selected language from dropdown
+    getCardsFromJson(selectedLanguage); // Fetch and display cards in selected language
+});
+
+// Load default language on page load
+document.addEventListener("DOMContentLoaded", () => {
+    getCardsFromJson("pt"); // Default to English on first load
+});
+
+
+
+  
+  
 const exactWordScore = 12;
 const partialWordScore = 10;
 const levenshteinScore = 10;
@@ -302,19 +421,56 @@ async function sortCardsByTitle(data) {
     return data.cards.sort((a, b) => a.title.localeCompare(b.title));
 }
 
-async function getCardsFromJson() {
+// async function getCardsFromJson() {
+//     try {
+//         const res = await fetch("./assets/data/cards_pt-br.json");
+//         const data = await res.json();
+//         const sortedCards = await sortCardsByTitle(data);
+//         await loadFavoriteCardsId();
+//         await addFavoriteTag(sortedCards);
+//         getTagsFromCards(sortedCards);
+//         insertCardsIntoHtml(sortedCards);
+//     } catch (error) {
+//         console.error("An error occurred while fetching card data.", error);
+//     }
+// }
+
+// let me try if else here 
+
+async function getCardsFromJson(language = "en") {
     try {
-        const res = await fetch("./assets/data/cards_pt-br.json");
-        const data = await res.json();
-        const sortedCards = await sortCardsByTitle(data);
-        await loadFavoriteCardsId();
-        await addFavoriteTag(sortedCards);
-        getTagsFromCards(sortedCards);
-        insertCardsIntoHtml(sortedCards);
+        let res; // Declare a variable to store the response from fetch
+
+        // Determine which JSON file to fetch based on the selected language
+        if (language === "en") {
+            res = await fetch("./assets/data/cards_en-gb.json"); // Fetch English card data
+        } else if (language === "pt") {
+            res = await fetch("./assets/data/cards_pt-br.json"); // Fetch Portuguese card data
+        } else {
+            throw new Error("Unsupported language"); // Handle unsupported language input
+        }
+
+        const data = await res.json(); // Convert the fetched response into JSON format
+
+        const sortedCards = await sortCardsByTitle(data); // Sort the card data by title
+
+        await loadFavoriteCardsId(); // Load the list of favorite card IDs from storage
+
+        await addFavoriteTag(sortedCards); // Add a favorite tag to cards based on saved favorites
+
+        getTagsFromCards(sortedCards); // Extract and process tags from the sorted card data
+
+        insertCardsIntoHtml(sortedCards); // Render the sorted cards into the HTML page
     } catch (error) {
-        console.error("An error occurred while fetching card data.", error);
+        console.error("An error occurred while fetching card data.", error); // Log any errors
     }
 }
+
+
+
+
+
+
 
 searchInput.addEventListener("input", searchCards);
 filterSelect.addEventListener("change", filterCards);
